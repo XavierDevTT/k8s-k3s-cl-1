@@ -27,8 +27,7 @@ spec:
           persistentVolumeClaim:
             claimName: linkding-data-pvc
       securityContext:
-        runAsUser: 1000
-        runAsGroup: 3000
-        fsGroup: 2000
-        supplementalGroups: [4000]
+        runAsUser: 33
+        runAsGroup: 33
+        fsGroup: 33
 
