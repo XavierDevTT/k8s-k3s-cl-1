@@ -20,7 +20,15 @@ spec:
           volumeMounts:
             - name: linkding-data
               mountPath: "/etc/linkding/data"
+          securityContext:
+            allowPrivilegeEscalation: false
       volumes:
         - name: linkding-data
           persistentVolumeClaim:
             claimName: linkding-data-pvc
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 3000
+        fsGroup: 2000
+        supplementalGroups: [4000]
+
