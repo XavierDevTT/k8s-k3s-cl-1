@@ -7,3 +7,4 @@ resources:
     #  - test-secret.yaml
   - tunnel-credentials.yaml
   - superuser-secret.yaml
+  - ingress.yaml
