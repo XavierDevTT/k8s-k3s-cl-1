@@ -28,10 +28,13 @@ spec:
   values:
     grafana:
       adminPassword: some-password
-    thanosRuler:
-      ingress:
-        enabled: true
-        ingressClassName: traefik
-        hosts:
+    ingress:
+      enabled: true
+      ingressClassName: traefik
+      annotations:
+        ingressclass.kubernetes.io/is-default-class: "true"
+        meta.helm.sh/release-name: traefik
+        meta.helm.sh/release-namespace: kube-system
+      hosts:
           - grafana.darnelldaniell.com
 
