@@ -37,4 +37,7 @@ spec:
           meta.helm.sh/release-namespace: kube-system
         hosts:
             - grafana.darnelldaniell.com
-
+        tls:
+          - secretName: grafana-tlscert
+            hosts:
+              - grafana.darnelldaniell.com
