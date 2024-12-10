@@ -6,7 +6,7 @@ spec:
   ingressClassName: traefik
   rules:
     - host: uptime.darnelldaniell.com
-      https:
+      http:
         paths:
           - backend:
               service:
