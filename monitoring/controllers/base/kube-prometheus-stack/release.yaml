@@ -33,10 +33,4 @@ spec:
       ingressClassName: traefik
       hosts:
         - grafana.darnelldaniell.com
-      paths:
-        - path: /
-          pathType: "Prefix"
-          backend:
-            serviceName: "kube-prometheus-stack-grafana"
-            servicePort: 80
 
