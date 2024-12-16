@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: audiobookshelf
+  name: audiobookshelf
+  namespace: audiobookshelf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: audiobookshelf
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: audiobookshelf
+    spec:
+      containers:
+      - image: ghcr.io/advplyr/audiobookshelf:2.17.4
+        name: audiobookshelf
+        envFrom:
+          - configMapRef:
+              name: audiobookshelf-configmap
+#        volumeMounts:
+#            - mountPath:
+#              name: volume
+#      volumes:
+#      - name: volume
+#        hostPath:
+#          path:
