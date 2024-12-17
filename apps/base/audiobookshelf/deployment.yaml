@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: audiobookshelf
+    app: audiobook-shelf
   name: audiobookshelf
   namespace: audiobookshelf
 spec:
