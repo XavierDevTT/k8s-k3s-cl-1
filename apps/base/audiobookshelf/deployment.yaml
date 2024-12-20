@@ -34,6 +34,7 @@ spec:
         volumeMounts:
             - mountPath: /metadata
               name: data
-			- name: data
-				persistentVolumeClaim:
-					claimName: audiobookshelf-pvc
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: audiobookshelf-pvc
