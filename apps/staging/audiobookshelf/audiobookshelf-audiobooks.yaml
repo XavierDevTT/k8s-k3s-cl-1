@@ -8,5 +8,6 @@ spec:
     - ReadWriteOnce
   volumeMode: Filesystem
   resources:
+  storageClassName: manual
     requests:
       storage: 1Gi
