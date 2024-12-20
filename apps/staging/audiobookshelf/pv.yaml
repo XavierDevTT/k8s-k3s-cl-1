@@ -5,11 +5,11 @@ metadata:
   namespace: audiobookshelf
 spec:
   capacity:
-    storage: 3Gi
+    storage: 5Gi
   volumeMode: Filesystem
   storageClassName: manual
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  hostpath:
+  hostPath:
     path: "/k8s-pv/auidobookshelf/"
