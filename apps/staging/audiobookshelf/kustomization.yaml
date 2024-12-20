@@ -6,3 +6,5 @@ resources:
   - audiobookshelf-audiobooks.yaml
   - audiobookshelf-metadata.yaml
   - audiobookshelf-config.yaml
+  - audiobookshelf-tunnel-credentials.yaml
+  - ingress.yaml
