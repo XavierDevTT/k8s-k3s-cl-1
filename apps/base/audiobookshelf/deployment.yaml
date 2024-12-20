@@ -23,16 +23,11 @@ spec:
           - configMapRef:
               name: audiobookshelf-configmap
         volumeMounts:
-            - mountPath: /audiobooks
-              name: data
-        volumeMounts:
-            - mountPath: /podcasts
-              name: data
-        volumeMounts:
-            - mountPath: /config
-              name: data
-        volumeMounts:
-            - mountPath: /metadata
+            - mountPath:
+              - /audiobooks
+              - /podcasts
+              - /config
+              - /metadata
               name: data
       volumes:
         - name: data
