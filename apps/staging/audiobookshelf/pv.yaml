@@ -10,6 +10,6 @@ spec:
   storageClassName: manual
   accessModes:
     - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Retain
+      #  persistentVolumeReclaimPolicy: Retain
   hostPath:
     path: "/k8s-pv/auidobookshelf/"
