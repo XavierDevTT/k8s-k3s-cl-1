@@ -25,10 +25,8 @@ spec:
         volumeMounts:
             - mountPath: "/audiobooks"
               name: audiobooks
-        volumeMounts:
             - mountPath: "/config"
               name: config
-        volumeMounts:
             - mountPath: "/metadata"
               name: metadata
       volumes:
