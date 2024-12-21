@@ -8,3 +8,4 @@ resources:
   - audiobookshelf-config.yaml
   - audiobookshelf-tunnel-credentials.yaml
   - ingress.yaml
+  - cloudflare.yaml
